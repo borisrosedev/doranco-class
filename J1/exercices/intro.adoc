@@ -1,0 +1,16 @@
+= Exercice introductif 
+
+
+En 15 minutes 
+
+// Première partie 
+Créer une page web 
+- Créer le fichier index.html 
+- Créer le fichier style.css
+- Faire en sorte d'afficher sur la page index.html une image mise en format par la feuille de style style.css
+
+//Deuxième partie:
+- Architecturer votre application en créant les dossiers appropriés 
+- Ajouter un "formater" (prettier)
+- Ajouter un linter 
+- Ajouter un bundler 
