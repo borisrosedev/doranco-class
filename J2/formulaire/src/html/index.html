@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+    <form id="login-form" style="width: 400px; display: flex; flex-direction: column; padding: 10px;">
+
+       <section class="login-form__inputs" style="display: flex; flex-direction: column;">
+            <input id="email" type="email" placeholder="Entrer votre identifiant"  required style="padding: 10px;"/>
+            <input id="password" type="password" placeholder="Entrer votre mot de passe" style="padding: 10px;" required/>
+       </section>
+       <section class="login-form__buttons">
+            <button style="padding: 10px;" type="submit">Valider</button>
+            <button style="padding: 10px;" type="reset">Réinitialiser</button>
+       </section>
+
+    </form>
+
+
+
+    <script src="../ts/form.js"></script>
+    
+</body>
+</html>
