@@ -1,0 +1,153 @@
+= Les fonctions 
+:customcss: style.css
+
+[.blue.background]
+== Exercice 1 
+
+[source, javascript]
+----
+// Connaît-on le type des variables a et b
+
+function add(a, b){
+    return a + b;
+}
+
+----
+
+
+[.blue.background]
+== Exercice 2 
+
+[source, javascript]
+----
+// Comment appelle-t-on les variables a et b
+
+function add(a, b){
+    return a + b;
+}
+
+----
+
+[.blue.background]
+== Exercice 3 
+
+[source, javascript]
+----
+// Comment appelle-t-on la partie de la fonction qui nous permet de savoir ce qu'elle attend, le type de ce qu'elle attend (parfois) et encore potentiellement le type de la valeur qu'elle retourne  ?
+
+function add(a, b){
+    return a + b;
+}
+
+function add(a,b){
+    const sum = a + b;
+    return sum;
+}
+
+const add = (a,b) => a + b;
+
+
+
+----
+
+[.blue.background]
+== Exercice 4 
+
+[source, javascript]
+----
+// Comment appelle-t-on la partie qui est entre les accolades de la fonction ?
+
+function add(a, b){
+    return a + b;
+}
+
+----
+
+[.blue.background]
+== Exercice 5 
+
+[source, javascript]
+----
+
+// Existe-t-il une erreur ? 
+function add(a, b){
+    return a + b;
+}
+
+const sum = add(1,2,1)
+console.log(sum)
+
+----
+
+[.blue.background]
+== Exercice 6
+
+
+[source, html]
+----
+
+<html>
+<head>
+</head>
+    <body>
+        <div id="container"></div>
+    </body>
+</html>
+
+----
+
+[source, javascript]
+----
+// Quelle doit être la valeur de id pour que la variable container contienne la div identifiée par container ?
+// Quelle peut être l'alternative à l'utilisation de getElementById() ?
+let id;
+
+id = ""
+
+const container = document.getElementById(id)
+
+----
+
+
+[.blue.background]
+== Exercice 7
+
+[source, javascript]
+----
+
+let id;
+
+// Est-ce que la variable est correctement déclarée ?
+
+----
+
+== Exercice 8
+
+[source, javascript]
+----
+
+let id;
+
+id = 20;
+
+// Quelle est le type de la variable ?
+
+----
+
+
+== Exercice 9
+
+[source, javascript]
+----
+
+let count, isLoggedIn; 
+
+count = 0;
+isLoggedIn = false;
+
+// Quel est le type
+
+----
+
+
+

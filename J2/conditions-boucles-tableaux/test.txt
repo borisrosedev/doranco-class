@@ -1,0 +1,25 @@
+const age:number = 20; // typage explicite
+
+// la variable age est-elle mutable ? 
+// quel est le type de la variable age ?
+// aurais-je pu utiliser let ? 
+// est-ce que j'aurais pu si j'avais utilisé let changer le type de la valeur par exemple mettre true à la place de 20 ?
+// est-ce que le typage explicite est autorisé en javascript
+
+const isUnderAge:boolean = age < 18 ; // type explicite 
+// est-ce que isUnderAge a comme valeur false  en l'espèce ?
+
+function showMessage: void (canAccess:boolean){
+    // combien d'instructions y-a-t-il dans le corps de cette fonction ?
+    console.log(canAccess == true ? ' Vous pouvez accéder au site' : 'Vous devez encore attendre quelques années')
+}
+
+switch(isUnderAge){
+    // est-ce que le console.log() va être exécuté si on tombe dans l'une ou l'autre des conditions précédentes ?
+    case true:
+    case false:
+        showMessage(isUnderAge);
+    default:
+      console.log('default')
+      break;
+}
