@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
 
-    <form id="login-form" style="width: 400px; display: flex; flex-direction: column; padding: 10px;">
+    <form id="login-form" style="width: 400px; display: flex; flex-direction: column; padding: 10px; opacity: 0; box-shadow: 0 0 5px rgb(0, 0, 0); overflow: hidden; border-radius: 10px; animation: show-up 2000ms ease-in-out forwards;">
 
-       <section class="login-form__inputs" style="display: flex; flex-direction: column;">
-            <input id="email" type="email" placeholder="Entrer votre identifiant"  required style="padding: 10px;"/>
-            <input id="password" type="password" placeholder="Entrer votre mot de passe" style="padding: 10px;" required/>
+       <section class="login-form__inputs" style="display: flex; flex-direction: column; margin-bottom: 5px;">
+            <article style="display: flex; flex-direction: column; margin-block: 5px;">
+                <label for="email"></label>
+                <input id="email" type="email" placeholder="Entrer votre identifiant"  required style="padding: 10px;"/>
+                <aside style="padding-block: 5px;height:5px;align-items: center; margin-block: 5px;" id="email-error">
+                </aside>
+            </article>
+   
+            <article style="display: flex; flex-direction: column;margin-block: 10px;">
+                <label for="password"></label>
+                <input id="password" type="password" placeholder="Entrer votre mot de passe" style="padding: 10px;" required/>
+                <aside style="padding-block: 5px; height: 5px;align-items: center; margin-bottom: 5px;" id="password-error">
+                </aside>
+            </article>
+       
        </section>
-       <section class="login-form__buttons">
+       <section class="login-form__buttons" style="display: flex; justify-content: space-between;">
             <button style="padding: 10px;" type="submit">Valider</button>
             <button style="padding: 10px;" type="reset">Réinitialiser</button>
        </section>

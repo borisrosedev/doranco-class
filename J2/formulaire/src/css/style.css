@@ -27,3 +27,29 @@ figure {
     margin: 0;
     padding: 0;
 }
+
+@keyframes show-up {
+    from {
+        opacity: 0;
+        transform: translateY(100px) scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes show-up-warning {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+        z-index: -10;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        z-index: 1;
+    }
+}
