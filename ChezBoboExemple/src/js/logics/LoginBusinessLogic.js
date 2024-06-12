@@ -2,7 +2,6 @@ import form from "../components/form.js"
 
 export class LoginBusinessLogic {
     data;
-
     constructor(){ 
         this.data = {
             
@@ -23,13 +22,12 @@ export class LoginBusinessLogic {
             ],
             buttons : [
                 {
-                    id: 'submit-button',
-                    name: 'subit-button',
+                    id: 'login-submit-button',
                     type: 'submit',
                     textContent: 'Valider'
                 },
                 {
-                    name: 'reset-button',
+                    id: 'login-reset-button',
                     type: 'reset',
                     textContent: 'Réinitialiser'
                 },
@@ -39,12 +37,17 @@ export class LoginBusinessLogic {
         
         const loginMain = document.getElementById('login-main') 
         loginMain.innerHTML += form(this.data);
+        const loginForm = document.getElementById('login-form')
+        const self = this
+        loginForm.onsubmit = (e) => self.onSubmit(e);
+        loginForm.addEventListener('reset', function(){
+            self.onReset()
+        })
+ 
     }
     
-
-
-
-    onSubmit(){
+    onSubmit(e){
+        e.preventDefault()
         console.log('Clic sur le formulaire')
     }
 

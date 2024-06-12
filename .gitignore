@@ -5,3 +5,5 @@
 **/*.synctex.gz
 *.tex
 **/*node_modules
+**/*.vscode
+**.*DS_Store
