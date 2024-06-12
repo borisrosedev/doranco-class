@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChezBobo</title>
+</head>
+<body>  
+    <div id="container"></div>
+    <script type="module">
+        import loginUI from "./src/js/pages/loginUI.js"
+
+        const container = document.getElementById('container');
+
+        const data = {
+            id: 'login-form',
+            email: {
+                type: 'email',
+                id: 'email',
+                placeholder: 'Entrer votre email'
+            },
+            password: {
+                type: 'password',
+                id: 'password',
+                placeholder: 'Entrer votre mot de passe'
+
+            },
+            submitButton: {
+                type: 'submit',
+                textContent: 'Valider'
+            },
+            resetButton: {
+                type: 'reset',
+                textContent: 'Réinitialiser'  
+            }
+        }
+
+
+        container.innerHTML = loginUI(data)
+
+    </script>
+</body>
+</html>
