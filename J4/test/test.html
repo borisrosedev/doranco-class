@@ -413,7 +413,90 @@ ul.byline {
 ul.byline li + li {
   margin-top: 0.25em;
 }
-</style><link rel="stylesheet" href="style.css"></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>Quiz</h1></section><section id="_exo" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
+</style><link rel="stylesheet" href="style.css"></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>Quiz</h1></section><section id="_exo" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let isLoggedIn = false;
+
+function isLoggedInMessage(isLoggedIn = !isLoggedIn) {
+    return `${isLoggedIn ? 'Connecté(e)' : 'Déconnecté(e)'}`;
+}
+
+console.log(isLoggedInMessage());
+// Que va afficher la console?</code></pre></div></div></div></section>
+<section id="_exo_2" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let isOk = true;
+let age = 20;
+let arr = [isOK, age, { age: age, isOk:isOk, name: 'Theo Bil'}]
+
+
+// Que vaut arr.age ?</code></pre></div></div></div></section>
+<section id="_exo_3" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">// fichier formHandler.js
+
+const formHandler = function(e){
+    e.preventDefault()
+    console.info("Clic sur le bouton de validation du formulaire")
+}
+
+export default formHandler</code></pre></div></div></div></section>
+<section id="_exo_4" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">// fichier LoginContainer.js
+import submitHandler from "./formHandler.js"
+
+const form = document.getElementById('login-form'); // existe dans le DOM (sur la page HTML)
+form.addEventListener('submit', submitHandler);</code></pre></div></div></div></section>
+<section id="_exo_5" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript"></code></pre></div></div></div></section>
+<section id="_exo_6" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let hasTokenExpired = false;
+
+let persistConnection = hasTokenExpired ? "true" : "false"
+
+//Quel est le type de la variable persistConnection ?</code></pre></div></div></div></section>
+<section id="_exo_7" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">const areUserOneAndTwoConnected = [!"Michael", !!"Antoine"]
+
+console.log(areUsersOneAndTwoConnected)
+//Quelle est la valeur affiché dans la console ?</code></pre></div></div></div></section>
+<section id="_exo_8" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">const clients = ['Bob', 'Yoan'].toString()
+
+console.log(clients)
+//Quelle est la valeur affiché dans la console ?</code></pre></div></div></div></section>
+<section id="_exo_9" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">const clients = ['Bob', 'Rob', 'Paul', 'Maria', 'Sarah']
+
+console.log(clients[clients.length - 1])
+//Quelle est la valeur affiché dans la console ?</code></pre></div></div></div></section>
+<section id="_exo_10" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">const clients = ['Bob', 'Rob', 'Paul', 'Maria', 'Sarah']
+
+console.log(clients[2].toLowerCase())
+
+//Quelle est la valeur affiché dans la console ?</code></pre></div></div></div></section>
+<section id="_exo_11" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">const clients = ['Bob', 'Rob', 'Paul', 'Maria', 'Sarah']
+const [Xavier, ...rest] = clients
+
+//Quelle est la valeur de Xavier ?</code></pre></div></div></div></section>
+<section id="_exo_12" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">const users = [
+    {
+        id: Number('1'),
+        name: 'Charles Xavier'
+    },
+    {
+        id: parseInt("2", 10),
+        name: 'Logan Cyclope'
+    }
+]
+
+//Quelle est la valeur de users[2].id ?
+//Quelle est la valeur de users[1].id ?</code></pre></div></div></div></section>
+<section id="_exo_13" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">const users = [
+    {
+        name: 'Charles Xavier',
+    },
+    {
+        name: 'Logan Cyclope'
+    }
+]
+
+users.push({
+    name: 'Jane Gray'
+})
+users.pop()
+
+// Quel est le type de users ?
+// Combien y-a-t-il d'éléments dans users</code></pre></div></div></div></section>
+<section id="_exo_14" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
 
 function shadowI(i = "I"){
     return i
@@ -421,7 +504,7 @@ function shadowI(i = "I"){
 
 console.log(shadowI(undefined))
 // Qu'est-ce que la console web va afficher</code></pre></div></div></div></section>
-<section id="_exo_2" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
+<section id="_exo_15" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
 
 function shadowI(i = "I"){
     return i
@@ -430,25 +513,25 @@ function shadowI(i = "I"){
 i = shadowI()
 console.log(i)
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_3" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
+<section id="_exo_16" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
 
 i = ((i) =&gt; i[0])("Alexandre")
 
 console.log(i)
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_4" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
+<section id="_exo_17" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
 
 i = i.replace('ère', 'ique')
 
 console.log(i)
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_5" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
+<section id="_exo_18" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
 
 i = " Et Aventures"
 
 console.log(i)
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_6" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
+<section id="_exo_19" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
 function showMessage(){
     if(!!i){
         console.log("✅ i", i);
@@ -458,13 +541,13 @@ function showMessage(){
 }
 
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_7" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
+<section id="_exo_20" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
 
 i = i[1]
 
 console.log(i)
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_8" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
+<section id="_exo_21" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
 
 function changeString(str){
     return str[str.length - 1]
@@ -474,7 +557,7 @@ i = changeString(i) + i[1]
 
 console.log(i)
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_9" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
+<section id="_exo_22" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Mystère";
 
 function changeString(str){
     return str[str.length - 1]
@@ -484,7 +567,7 @@ i = changeString(i) + i[1]
 
 console.log(i)
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_10" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let name = "Hercule Poirot";
+<section id="_exo_23" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let name = "Hercule Poirot";
 
 function changeString(str){
     return str.split(' ')
@@ -494,7 +577,7 @@ const i = changeString(name)[0][0] + " " + changeString(name)[1][0]
 
 console.log(i)
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_11" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Ma-gi-que";
+<section id="_exo_24" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "Ma-gi-que";
 
 function changeString(str){
     return str.split('-')
@@ -504,7 +587,7 @@ i = changeString(i)[0] + i[1]
 
 console.log(i)
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_12" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "20";
+<section id="_exo_25" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">let i = "20";
 
 function changeString(str){
     return Number(str)
@@ -514,7 +597,7 @@ i = changeString(i) + i.length
 
 console.log(i)
 // Qu'est-ce qui va s'afficher dans la console web ?</code></pre></div></div></div></section>
-<section id="_exo_13" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- fichier index.html  --&gt;
+<section id="_exo_26" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- fichier index.html  --&gt;
 &lt;html&gt;
     &lt;head&gt;&lt;/head&gt;
     &lt;body&gt;
@@ -534,7 +617,7 @@ function showCountMessage(counter){
 }
 
 showConsoleMessage(0)</code></pre></div></div></div></section>
-<section id="_exo_14" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- fichier index.html  --&gt;
+<section id="_exo_27" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- fichier index.html  --&gt;
 &lt;html&gt;
     &lt;head&gt;&lt;/head&gt;
     &lt;body&gt;
@@ -544,7 +627,7 @@ showConsoleMessage(0)</code></pre></div></div></div></section>
 <div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">// fichier main.js
 const form = document.getElementById('form')
 // quelle va être la valeur de form ?</code></pre></div></div></div></section>
-<section id="_exo_15" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- fichier index.html  --&gt;
+<section id="_exo_28" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- fichier index.html  --&gt;
 &lt;html lang="fr" dir="ltr"&gt;
     &lt;head&gt;&lt;/head&gt;
     &lt;body&gt;
@@ -560,7 +643,7 @@ const input = document.getElementsByClassName('input')[0];
 input.addEventListener('input', function(e)(
     console.log('caractère inséré par l\'utilisateur: ', e.target.value)
 ))</code></pre></div></div></div></section>
-<section id="_exo_16" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- fichier index.html  --&gt;
+<section id="_exo_29" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- fichier index.html  --&gt;
 &lt;html lang="fr" dir="ltr"&gt;
     &lt;head&gt;&lt;/head&gt;
     &lt;body&gt;
@@ -575,7 +658,7 @@ input.addEventListener('input', function(e)(
 const input = document.getElementsByClassName('input')
 
 // Quel est le type de la constante input ?</code></pre></div></div></div></section>
-<section id="_exo_17" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">// fichier main.js
+<section id="_exo_30" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">// fichier main.js
 const add = function(a, b) {
     if (a == null || b == null) {
         return;
@@ -590,7 +673,7 @@ const add = function(a, b) {
 add("20",30);  // Quelle est la valeur retournée ici ?
 add(20, "bs"); // Quelle est la valeur retournée ici ?
 add(30,"0"); // Quelle est la valeur retournée ici ?</code></pre></div></div></div></section>
-<section id="_exo_18" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">// fichier main.js
+<section id="_exo_31" class="blue background"><h2>Exo</h2><div class="slide-content"><div class="listingblock"><div class="content"><pre class="highlight"><code class="language-javascript" data-lang="javascript">// fichier main.js
 const user = {
     "email":"boris@gmail.com",
     "password": "caroline",

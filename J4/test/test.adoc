@@ -7,6 +7,225 @@
 [source, javascript]
 ----
 
+let isLoggedIn = false;
+
+function isLoggedInMessage(isLoggedIn = !isLoggedIn) {
+    return `${isLoggedIn ? 'Connecté(e)' : 'Déconnecté(e)'}`;
+}
+
+console.log(isLoggedInMessage()); 
+// Que va afficher la console?
+----
+
+
+
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let isOk = true;
+let age = 20;
+let arr = [isOK, age, { age: age, isOk:isOk, name: 'Theo Bil'}]
+
+
+// Que vaut arr.age ?
+----
+
+
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+// fichier formHandler.js
+
+const formHandler = function(e){
+    e.preventDefault()
+    console.info("Clic sur le bouton de validation du formulaire")
+}
+
+export default formHandler
+
+----
+[.blue.background]
+== Exo
+[source, javascript]
+----
+// fichier LoginContainer.js
+import submitHandler from "./formHandler.js"
+
+const form = document.getElementById('login-form'); // existe dans le DOM (sur la page HTML)
+form.addEventListener('submit', submitHandler);
+
+
+
+----
+
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+----
+
+
+
+
+
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let hasTokenExpired = false;
+
+let persistConnection = hasTokenExpired ? "true" : "false"
+
+//Quel est le type de la variable persistConnection ?
+
+----
+
+
+
+
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+const areUserOneAndTwoConnected = [!"Michael", !!"Antoine"]
+
+console.log(areUsersOneAndTwoConnected)
+//Quelle est la valeur affiché dans la console ?
+----
+
+
+
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+const clients = ['Bob', 'Yoan'].toString() 
+
+console.log(clients)
+//Quelle est la valeur affiché dans la console ?
+----
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+const clients = ['Bob', 'Rob', 'Paul', 'Maria', 'Sarah']
+
+console.log(clients[clients.length - 1])
+//Quelle est la valeur affiché dans la console ?
+----
+
+
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+const clients = ['Bob', 'Rob', 'Paul', 'Maria', 'Sarah']
+
+console.log(clients[2].toLowerCase())
+
+//Quelle est la valeur affiché dans la console ?
+----
+
+
+
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+const clients = ['Bob', 'Rob', 'Paul', 'Maria', 'Sarah']
+const [Xavier, ...rest] = clients
+
+//Quelle est la valeur de Xavier ?
+----
+
+
+
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+const users = [
+    {
+        id: Number('1'),
+        name: 'Charles Xavier'
+    },
+    {
+        id: parseInt("2", 10),
+        name: 'Logan Cyclope'
+    }
+]
+
+//Quelle est la valeur de users[2].id ? 
+//Quelle est la valeur de users[1].id ?
+----
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+const users = [
+    {
+        name: 'Charles Xavier',
+    },
+    {
+        name: 'Logan Cyclope'
+    }
+]
+
+users.push({
+    name: 'Jane Gray'
+})
+users.pop()
+
+// Quel est le type de users ? 
+// Combien y-a-t-il d'éléments dans users
+
+----
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
 let i = "Mystère";
 
 function shadowI(i = "I"){
