@@ -1,0 +1,509 @@
+= Quiz
+:customcss: style.css
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "Mystère";
+
+function shadowI(i = "I"){
+    return i
+}
+
+console.log(shadowI(undefined))
+// Qu'est-ce que la console web va afficher
+----
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "Mystère";
+
+function shadowI(i = "I"){
+    return i
+}
+
+i = shadowI()
+console.log(i)
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+
+
+
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "Mystère";
+
+i = ((i) => i[0])("Alexandre")
+
+console.log(i)
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "Mystère";
+
+i = i.replace('ère', 'ique')
+
+console.log(i)
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "Mystère";
+
+i = " Et Aventures"
+
+console.log(i)
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "Mystère";
+function showMessage(){
+    if(!!i){
+        console.log("✅ i", i);
+    } else {
+        console.log("néant");
+    }
+}
+ 
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "Mystère";
+
+i = i[1]
+
+console.log(i)
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "Mystère";
+
+function changeString(str){
+    return str[str.length - 1]
+}
+
+i = changeString(i) + i[1]
+
+console.log(i)
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "Mystère";
+
+function changeString(str){
+    return str[str.length - 1]
+}
+
+i = changeString(i) + i[1]
+
+console.log(i)
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let name = "Hercule Poirot";
+
+function changeString(str){
+    return str.split(' ')
+}
+
+const i = changeString(name)[0][0] + " " + changeString(name)[1][0] 
+
+console.log(i)
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "Ma-gi-que";
+
+function changeString(str){
+    return str.split('-')
+}
+
+i = changeString(i)[0] + i[1]
+
+console.log(i)
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+[.blue.background]
+== Exo 
+[source, javascript]
+----
+
+let i = "20";
+
+function changeString(str){
+    return Number(str)
+}
+
+i = changeString(i) + i.length
+
+console.log(i)
+// Qu'est-ce qui va s'afficher dans la console web ?
+----
+
+
+
+[.blue.background]
+== Exo
+[source, html]
+----
+<!-- fichier index.html  -->
+<html>
+    <head></head>
+    <body>
+        <script src="./main/js"></script>
+    </body>
+</html>
+----
+[source, javascript]
+----
+// fichier main.js
+function showCountMessage(counter){
+    if(typeof counter == "string"){
+        return
+    }
+    if(counter == 10){
+        return
+    }
+    console.log(counter)
+    return showConsoleMessage(counter++)
+}
+
+showConsoleMessage(0)
+
+----
+
+
+[.blue.background]
+== Exo 
+[source, html]
+----
+<!-- fichier index.html  -->
+<html>
+    <head></head>
+    <body>
+        <script src="./main/js"></script>
+    </body>
+</html>
+----
+[source, javascript]
+----
+// fichier main.js
+const form = document.getElementById('form')
+// quelle va être la valeur de form ?
+----
+
+[.blue.background]
+== Exo
+[source, html]
+----
+<!-- fichier index.html  -->
+<html lang="fr" dir="ltr">
+    <head></head>
+    <body>
+        <form>
+            <input class="input" id="email" type="email" placeholder="email" />
+        </form>
+        <script src="./main/js"></script>
+    </body>
+</html>
+----
+[source, javascript]
+----
+//main.js
+
+const input = document.getElementsByClassName('input')[0];
+input.addEventListener('input', function(e)(
+    console.log('caractère inséré par l\'utilisateur: ', e.target.value)
+))
+
+----
+
+[.blue.background]
+== Exo
+[source, html]
+----
+<!-- fichier index.html  -->
+<html lang="fr" dir="ltr">
+    <head></head>
+    <body>
+        <form>
+            <input id="email" type="email" placeholder="email" />
+        </form>
+        <script src="./main/js"></script>
+    </body>
+</html>
+----
+
+[source, javascript]
+----
+//main.js
+
+const input = document.getElementsByClassName('input')
+
+// Quel est le type de la constante input ?
+----
+
+[.blue.background]
+== Exo
+[source, javascript]
+----
+// fichier main.js
+const add = function(a, b) {
+    if (a == null || b == null) {
+        return;
+    }
+    const numA = Number(a);
+    const numB = Number(b);
+    if (isNaN(numA) || isNaN(numB)) {
+        return;
+    }
+    return numA + numB;
+}
+add("20",30);  // Quelle est la valeur retournée ici ?
+add(20, "bs"); // Quelle est la valeur retournée ici ?
+add(30,"0"); // Quelle est la valeur retournée ici ?
+----
+
+[.blue.background]
+== Exo
+[source, javascript]
+----
+// fichier main.js
+const user = {
+    "email":"boris@gmail.com",
+    "password": "caroline",
+    "accountIds": [1020, 1920, 1222]
+}
+
+// Si je fais console.log(accountIds) qu'est-ce que cela va afficher ?
+----
+
+[.blue.background]
+== Exo 2
+[source, html]
+----
+<!-- fichier index.html  -->
+<html>
+    <head></head>
+    <body>
+        <form id="login-form"></form>
+        <script src="./main/js"></script>
+    </body>
+</html>
+----
+[source, javascript]
+----
+// fichier main.js
+
+const form = document.querySelector('#login-form');
+
+// Une erreur s'est-elle glissée dans le code js ?
+----
+
+[.blue.background]
+== Exo 3
+[source, html]
+----
+<!-- fichier index.html  -->
+<html>
+    <head></head>
+    <body>
+        <form id="login-form">
+            <input id="password" type="email"  />
+            <input id="email"  type="password" />
+            <button id="submit-button" type="submit">Valider</button>
+        </form>
+        <script src="./main/js"></script>
+    </body>
+</html>
+----
+[source, javascript]
+----
+// fichier main.js
+function submitHandler(e){
+    e.preventDefault()
+    console.log('listening the submit event')
+}
+
+document.getElementById('login-form').addEventListener('submit', function(e){ submitHandler(e) })
+// Est-ce un bon moyen d'écouter l'évènement submit du formulaire ?
+----
+
+[.blue.background]
+== Exo 5
+[source, javascript]
+----
+// fichier main.js
+const user = {
+    "email":"boris@gmail.com",
+    "password": "caroline"
+}
+
+// user est-t-il un tableau ?
+----
+
+
+[.blue.background]
+== Exo 6
+[source, javascript]
+----
+// fichier main.js
+const judith = {
+    'firstname': 'Judith',
+    'lastname': 'Milo'
+}
+
+const baptiste = {
+    firstname : 'Baptiste',
+    lastname : 'Rio'
+}
+
+// Quelle est la bonne écriture ?
+----
+
+
+
+[.blue.background]
+== Exo 7
+
+
+[source, html]
+----
+<!-- fichier index.html  -->
+<html>
+    <head></head>
+    <body>
+        <header id="app-header"></header>
+        <form id="login-form"></form>
+        <footer id="app-footer"></footer>
+        <script src="./main/js"></script>
+    </body>
+</html>
+----
+[source, javascript]
+----
+// fichier main.js
+const loginPage = {
+    header: document.getElementById('app-header'),
+    form: document.getElementById('login-form'),
+    footer: document.getElementById('app-footer')
+}
+
+loginPage.header 
+
+----
+
+[.blue.background]
+== Exo 8
+
+[source, javascript]
+----
+
+let user = {
+    email: 'susan@gmail.com',
+    password : 'visiblePassword'
+}
+
+let db = [
+    {
+        email: 'susan@gmail.com',
+        password : 'visiblePassword' 
+    }
+]
+
+// est-ce que db est un objet ?
+
+for(const dbUser of dbUsers){
+    if(user.email == dbUser.email){
+        console.log('🟢 user exists in db')
+        if(user.password == dbUser.password){
+            console.log('✅ user connected')
+            break;
+        } else {
+            console.log('❌ 400 Bad Request')
+        }
+    }
+}
+
+
+
+
+
+----
+
+
+
+
+
+
+[.blue.background]
+== Exo 9
+
+[source, javascript]
+----
+// Qu'est-ce que trim()
+function createFormattedUser(data){
+    let user = {
+        email: data.email.trim(),
+        password :  data.password.trim(),
+        id: new Date().getTime(),
+        created_at:  new Date().toLocaleString('fr-FR')
+    }
+    return user
+}
+
+----
+
+
