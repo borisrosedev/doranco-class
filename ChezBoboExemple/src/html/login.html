@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Restaurant ChezBobo" />
+    <meta name="publisher" content="Restaurant ChezBobo" />
+    <meta name="descriptipn" content="Petit restaurant familial antillais où vous allez manger de bons accras de morue" />
+    <meta name="keywords" content="accras antillais ChezBobo restaurant famille manger Afrique piment">
+    <title> ChezBobo | Login </title>
+    <link  rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/1b1fa6fbda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="module">
+        import { LoginBusinessLogic } from "../js/logics/LoginBusinessLogic.js";
+        import loginUI from "../js/pages/loginUI.js"
+        import headerUI from "../js/layout/header.js"
+        const container = document.getElementById('container')
+        container.innerHTML += headerUI()
+        container.innerHTML += loginUI()
+        const loginBusinessLogic = new LoginBusinessLogic()
+
+    </script> 
+</body>
+</html>
