@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {
+
+    h1 {
+        border: solid black 2px;
+    }
+    
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang=fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body style="margin: 0; display: flex; flex-direction: column;">
+
+    <header style="position: fixed; inset:0; z-index: 20; height: 8vh; margin:0; padding:0; background-color: rgb(227, 182, 75);">
+        <h1> Login Page </h1>
+    </header>
+    <main style="min-height: 100vh;padding-top: 8vh; display: flex; align-items: center; justify-content: center;">
+        <form id="login-form" style="display: flex; flex-direction: column; background-color: gray; padding: 10px; border-radius: 10px; width: 50%;">
+            <section style="display: flex; flex-direction: column;">
+                <article style="display: flex; flex-direction: column;">
+                    <label for="email"></label>
+                    <input style="padding: 10px" type="email" placeholder="Entrer votre email" id="email"/>
+                </article>
+                <article style="display: flex; flex-direction: column;">
+                    <label for="label"></label>
+                    <input style="padding: 10px" type="password" placeholder="Entrer votre mot de passe" id="password" />
+                </article>
+            </section>
+            <section style="display: flex; margin-top: 10px; justify-content: space-between;">
+                <button style="padding: 8px 10px;"> Valider </button>
+                <button  style="padding: 8px 10px;"> Réinitialiser </button>
+            </section>
+           
+    
+        </form>
+    </main>
+
+    <script>
+        const loginForm = document.getElementById('login-form');
+        loginForm.addEventListener('submit', function(e){
+            e.preventDefault()
+            console.log('je gère personnellement la soumission du formulaire')
+        })
+    </script>
+    
+</body>
+</html>
